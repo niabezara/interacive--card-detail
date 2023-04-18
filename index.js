@@ -29,6 +29,7 @@ nameinput.addEventListener("input", () => {
     title.textContent = "JANE APPLESSED";
   } else {
     error.classList.remove("visible");
+    nameinput.style.borderColor = "#dfdee0";
     title.innerHTML = nameinput.value;
   }
 });
