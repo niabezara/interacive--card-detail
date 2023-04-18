@@ -80,6 +80,7 @@ month.addEventListener("input", (event) => {
     monthfront.innerHTML = paddedNumber + "/";
     console.log(paddedNumber);
     error2.classList.remove("visible");
+    month.style.borderColor = "#dfdee0";
   } else if (
     !isNaN(monthNumber) &&
     monthvalue.length === 2 &&
