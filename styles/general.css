@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Space Grotesk";
+  height: 100vh;
+}
+/* ************************************************ */
+/* header section */
+/* ************************************************ */
+
+header {
+  background-image: url(../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 31vh;
+  width: 100%;
+  padding: 1.6em 3.2em 0 1.7em;
+}
+
+.card-back {
+  background-image: url(../images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  width: 100%;
+  background-position: center right;
+}
+span {
+  position: absolute;
+
+  top: 8rem;
+  font-size: 9px;
+  line-height: 11px;
+  right: 6rem;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+.card-front {
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  transform: translateY(-6.5rem);
+  padding: 1.7em 2.7em 2em 1.9em;
+}
+
+.circles-div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+}
+.circle {
+  background: #ffffff;
+
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 2.5rem;
+}
+
+.small-circle {
+  border: 1px solid #ffffff;
+  width: 13.58px;
+  height: 13.5px;
+  border-radius: 7.5px;
+}
+.card-number {
+  position: absolute;
+  bottom: 4rem;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 2.2px;
+  color: #ffffff;
+}
+article {
+  font-family: "Space Grotesk";
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #ffffff;
+  bottom: 2rem;
+  gap: 12rem;
+}
+.datediv {
+  display: flex;
+}
+
+/* ************************************************ */
+/* main input sections  */
+/* ************************************************ */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 9em 2.4em 4.5em 2.4em;
+}
+
+label {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092f;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+}
+/* ****************************************************** */
+/* thank you section  */
+/* ****************************************************** */
+.container2 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 9em 2.4em 4.5em 2.4em;
+}
+
+.thank {
+  margin-top: 3.6rem;
+  margin-bottom: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.thank > h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 3.42222px;
+  color: #21092f;
+}
+.thank > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #8f8694;
+}
+
+.vision {
+  display: flex;
+}
+/* * ************************************************ */
+/* inputs */
+/* * ************************************************ */
+.separeted-labels {
+  display: flex;
+  flex-direction: row;
+  gap: 3.1rem;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+}
+input {
+  padding: 1.1em 0 1.1em 1.6em;
+  background: #ffffff;
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+  height: 4.5rem;
+}
+
+.month,
+.year {
+  width: 7.2rem;
+}
+
+.cvc {
+  width: 100%;
+}
+
+button {
+  background: #21092f;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 2.8rem;
+  height: 5.3rem;
+}
+
+.cvc-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.month-year-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  display: none;
+}
+
+.error1,
+.error2,
+.error3 {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff5050;
+  margin-top: 1rem;
+}
+/* * ************************************************ */
+/* Desktop version */
+/* * ************************************************ */
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+
+  header {
+    height: 100%;
+    width: 30rem;
+  }
+
+  .card-front {
+    transform: translate(38px, -47px);
+    width: 30em;
+    height: 17rem;
+  }
+
+  .card-back {
+    transform: translate(8.3rem, 33.3rem);
+    width: 30em;
+    height: 17rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 100%;
+    width: 50rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  main {
+    padding: 9em 8.4em 4.5em 13.4em;
+  }
+  .container2 {
+    padding: 9em 5.4em 4.5em 10.4em;
+  }
+  .card-front {
+    transform: translate(16.8rem, -16rem);
+    width: 46em;
+    height: 22rem;
+  }
+  .card-back {
+    transform: translate(6.3rem, 32.3rem);
+    width: 46em;
+    height: 22rem;
+  }
+
+  .card-number {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 3.42222px;
+    bottom: 5rem;
+  }
+
+  article {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  span {
+    top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  main {
+    padding: 9em 22.4em 4.5em 14.4em;
+  }
+  .container2 {
+    padding: 9em 13.4em 4.5em 10.4em;
+  }
+  .card-front {
+    transform: translate(21.8rem, -12rem);
+    width: 46em;
+    height: 22rem;
+  }
+  .card-back {
+    transform: translate(11.3rem, 35.3rem);
+    width: 46em;
+    height: 22rem;
+  }
+}
